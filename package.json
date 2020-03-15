@@ -13,7 +13,9 @@
   "author": "Keith Williams",
   "email": "keith@webizly.com",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "expect": "latest"
+  },
   "devDependencies": {
     "coveralls": "^3.0.9",
     "jest": "^25.1.0"
