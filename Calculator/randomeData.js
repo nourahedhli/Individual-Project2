@@ -30,7 +30,7 @@ function random_item(items)
 
 const items = [254, 45, 212, 365, 2543,3456,12];
 
-function randomN_numbers (){
+function randomN_numbers_withoutSeed (){
     let arr = DataWithoutSeed() ;
     for(let i = 0; i < 3; i++) {
         const y = items[Math.floor(Math.random() * items.length)];
@@ -38,12 +38,24 @@ function randomN_numbers (){
     }
 
     return arr ;
-    
+
 }
 
+function randomN_numbers_withSeed (){
+    let arr = DataWithSeed() ;
+    for(let i = 0; i < 3; i++) {
+        const y = items[Math.floor(Math.random() * items.length)];
+        arr.push(y);
+    }
+
+    return arr ;
+
+}
 
 
 module.exports = DataWithoutSeed;
 module.exports = random_item(items);
 module.exports = DataWithSeed ;
 module.exports = DataTwoWithSeed ;
+module.exports = randomN_numbers_withoutSeed ;
+module.exports = randomN_numbers_withSeed ;
