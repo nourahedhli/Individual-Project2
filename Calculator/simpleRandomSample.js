@@ -3,9 +3,9 @@ const data = require('../Calculator/randomeData');
 function simpleRandomSample(x){
 
     let dataset = [];
-    for (i = 0; i < x; i++){
+    for (let i = 0; i < x; i++){
         let y = data.randomN_numbers_withSeed();
-        for (element in y){
+        for (let element in y){
             if (dataset.length <= x) {
                 dataset.push(element);
             }
@@ -14,7 +14,7 @@ function simpleRandomSample(x){
             }
         }
 
-        if (dataset == x){
+        if (dataset === x){
             break;
         }
 
