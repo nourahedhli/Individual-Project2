@@ -14,7 +14,8 @@
   "email": "keith@webizly.com",
   "license": "ISC",
   "dependencies": {
-    "expect": "latest"
+    "expect": "latest",
+    "random-seed": "^0.3.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.9",
