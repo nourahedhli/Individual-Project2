@@ -1,12 +1,15 @@
-const mean = require('../functions/mean');
-const median = require('../functions/median');
-const mode = require('../functions/mode');
-const stdDev = require('../functions/stdDev');
-const variance = require('../functions/variance');
-const quartile = require('../functions/quartile');
-const skew = require('../functions/skew');
-const zscore = require('../functions/zscore');
-const meanDeviation = require('../functions/meanDeviation');
+const mean = require('/Calculator/mean');
+const median = require('/Calculator/meadian');
+const mode = require('/Calculator/mode');
+const stdDev = require('/Calculator/stdDev');
+const variance = require('/Calculator/variance');
+const quartile = require('/Calculator/quartile');
+const skew = require('/Calculator/skew');
+const zscore = require('/Calculator/zscore');
+const meanDeviation = require('/Calculator/meanDeviation');
+const r  = require ('/Calculator/correlations');
+const x = require('/Calculator/randomeData');
+const y = require('/Calculator/Data2');
 
 arr1 = [1,5,2,3,4,6];
 arr2 = [3,6,6,7,8,11,15,16];
@@ -14,6 +17,10 @@ arr3 = [1,1,1,2,2,3,3,3,3,3,4,4,5];
 
 test('Mean of arr1 to equal 3.5', () => {
     expect(mean(arr1)).toBe(3.5);
+});
+
+test('correlation of x and y to equal 4', () => {
+    expect(r(x,y)).toBe(4);
 });
 
 test('Median of arr1 to equal 3.5', () => {

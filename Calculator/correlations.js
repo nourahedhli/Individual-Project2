@@ -1,9 +1,8 @@
-const Correlation = require('node-correlation');
 
-const x = require('/Calculator/randomeData');
-const y = require('/Calculator/Data2');
 
-function getPearsonCorrelation() {
+
+
+function getPearsonCorrelation(x,y) {
     let i;
     let shortestArrayLength = 0;
 

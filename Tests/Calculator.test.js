@@ -1,5 +1,5 @@
 
-const Calculator = require('../Calculator');
+const Calculator = require('/Calculator/Calculator');
 
 test('Calculator divide 2 by  2 to equal 1', () => {
     let Calc = new Calculator();
