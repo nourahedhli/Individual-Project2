@@ -1,15 +1,15 @@
-const divide = require('./divide');
-const median = require('./median');
+const divide = require('../Calculator/divide');
+const median = require('../Calculator/meadian');
 
 function quartile(a){
-    quartiles = [];
+    let quartiles = [];
     const arr = a.sort();
 
-    half = Math.round(divide(a.length, 2));
+    let half = Math.round(divide(a.length, 2));
 
-    q1 = median(arr.slice(0,half));
-    q2 = median(a);
-    q3 = median(arr.slice(half, arr.length));
+    let q1 = median(arr.slice(0, half));
+    let q2 = median(a);
+    let q3 = median(arr.slice(half, arr.length));
 
     quartiles.push(q1);
     quartiles.push(q2);

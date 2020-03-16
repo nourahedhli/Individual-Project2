@@ -1,5 +1,5 @@
 
-const Calculator = require('/Calculator/Calculator');
+const Calculator = require('../Calculator/Calculator');
 
 test('Calculator divide 2 by  2 to equal 1', () => {
     let Calc = new Calculator();
@@ -22,7 +22,7 @@ test('Calculator Multiply 2 by  2 has a result equal to 4', () => {
 
 test('Calculator add array of 1,2,3,4 and get result 10', () => {
     let Calc = new Calculator();
-    let myArray = [1,2,3,4]
+    let myArray = [1,2,3,4];
     expect(Calc.Add(myArray)).toBe(10);
     expect(Calc.Result).toBe(10);
 

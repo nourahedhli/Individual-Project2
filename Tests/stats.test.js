@@ -1,15 +1,15 @@
-const mean = require('/Calculator/mean');
-const median = require('/Calculator/meadian');
-const mode = require('/Calculator/mode');
-const stdDev = require('/Calculator/stdDev');
-const variance = require('/Calculator/variance');
-const quartile = require('/Calculator/quartile');
-const skew = require('/Calculator/skew');
-const zscore = require('/Calculator/zscore');
-const meanDeviation = require('/Calculator/meanDeviation');
-const r  = require ('/Calculator/correlations');
-const x = require('/Calculator/randomeData');
-const y = require('/Calculator/Data2');
+const mean = require('../Calculator/mean');
+const median = require('../Calculator/meadian');
+const mode = require('../Calculator/mode');
+const stdDev = require('../Calculator/stdDev');
+const variance = require('../Calculator/variance');
+const quartile = require('../Calculator/quartile');
+const skew = require('../Calculator/skew');
+const zscore = require('../Calculator/zscore');
+const meanDeviation = require('../Calculator/meanDeviation');
+const r  = require ('../Calculator/correlations');
+const x = require('../Calculator/randomeData');
+const y = require('../Calculator/Data2');
 
 arr1 = [1,5,2,3,4,6];
 arr2 = [3,6,6,7,8,11,15,16];
