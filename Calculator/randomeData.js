@@ -41,7 +41,7 @@ function randomN_numbers_withoutSeed (){
 
 }
 
-function randomN_numbers_withSeed (){
+export function randomN_numbers_withSeed (){
     let arr = DataWithSeed() ;
     for(let i = 0; i < 3; i++) {
         const y = items[Math.floor(Math.random() * items.length)];
@@ -53,5 +53,7 @@ function randomN_numbers_withSeed (){
 }
 
 
-
 module.exports = DataWithSeed ;
+module.exports = randomN_numbers_withSeed;
+
+
