@@ -53,9 +53,5 @@ function randomN_numbers_withSeed (){
 }
 
 
-module.exports = DataWithoutSeed;
-module.exports = random_item(items);
+
 module.exports = DataWithSeed ;
-module.exports = DataTwoWithSeed ;
-module.exports = randomN_numbers_withoutSeed ;
-module.exports = randomN_numbers_withSeed ;
