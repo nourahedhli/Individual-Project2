@@ -1,18 +1,19 @@
 const square = require('./square');
-const sqrRt = require('./squareRoot');
-const mean = require('./mean');
-const sub = require('./Subtraction');
+const sqrRt = require('../Calculator/squareRoot');
+const mean = require('../Calculator/mean');
+const sub = require('../Calculator/Subtraction');
 
 function stdDev(a){
-    meanVal = mean(a);
-    squareSub = []
+    let meanVal = mean(a);
+    let squareSub = [];
 
-    for(i = 0; i < a.length; i++){
-        val = square(sub(a[i],meanVal));
+    let val;
+    for (let i = 0; i < a.length; i++) {
+        val = square(sub(a[i], meanVal));
         squareSub.push(val);
     }
 
-    stdMean = mean(squareSub);
+    let stdMean = mean(squareSub);
     return(sqrRt(stdMean));
 }
 module.exports = stdDev;

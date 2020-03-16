@@ -1,9 +1,9 @@
-const addition = require('/Calculator/addition');
-const product = require('/Calculator/Subtraction');
-const divide = require('/Calculator/divide');
-const subtract = require('/Calculator/Subtraction');
-const square_root = require('/Calculator/sqaureRoot');
-const square = require('/Calculator/sqaure');
+const addition = require('../Calculator/addition');
+const product = require('../Calculator/Product');
+const divide = require('../Calculator/divide');
+const subtract = require('../Calculator/Subtraction');
+const square_root = require('../Calculator/squareRoot');
+const square = require('../Calculator/square');
 
 class MathOperation {
 

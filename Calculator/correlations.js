@@ -1,11 +1,7 @@
-const Correlation = require('node-correlation');
 
-const x = require('/Calculator/randomeData');
-const y = require('/Calculator/Data2');
-
-function getPearsonCorrelation() {
+function getPearsonCorrelation(x,y) {
     let i;
-    let shortestArrayLength = 0;
+    let shortestArrayLength = x.length;
 
     const xy = [];
     const x2 = [];
@@ -34,7 +30,11 @@ function getPearsonCorrelation() {
     let step1 = (shortestArrayLength * sum_xy) - (sum_x * sum_y);
     let step2 = (shortestArrayLength * sum_x2) - (sum_x * sum_x);
     let step3 = (shortestArrayLength * sum_y2) - (sum_y * sum_y);
+
     let step4 = Math.sqrt(step2 * step3);
-    return step1 / step4; }
+
+    return step1 / step4;
+
+}
 
 module.exports = getPearsonCorrelation;
